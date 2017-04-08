@@ -14,6 +14,10 @@ public class Savings extends Account {
 
 	/**
 	 * A deposit comes with a fee of 50 cents per deposit
+	 * @param amount
+	 * 				amount is a deposit and must be > 0
+	 * @return true if the deposit was successful, false if not due to amount or
+	 *         invalid state
 	 */
 	public boolean deposit(float amount) {
 		if (getState() != State.CLOSED && amount > 0.0f) {
