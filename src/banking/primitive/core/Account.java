@@ -16,9 +16,9 @@ public abstract class Account implements java.io.Serializable {
         state = State.OPEN;
     }
 
-    protected Account(String n, float b) {
-        this(n); 
-        balance = b;
+    protected Account(String name, float balance) {
+        this.name = name; 
+        this.balance = balance;
     }
 
     /**
